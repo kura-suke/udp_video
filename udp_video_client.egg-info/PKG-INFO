@@ -1,0 +1,13 @@
+Metadata-Version: 2.4
+Name: udp-video-client
+Version: 0.1.1
+Summary: UDP video sender/receiver utilities (Diff + FEC) for research
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+Requires-Dist: numpy
+Requires-Dist: opencv-python
+
+# udp-video-client
+
+```python
+from client import VideoSender

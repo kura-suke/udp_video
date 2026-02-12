@@ -1,0 +1,23 @@
+[build-system]
+requires = ["setuptools>=61", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "udp-video"
+version = "0.1.1"
+description = "UDP video sender/receiver utilities (Diff + FEC) for research"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+  "numpy",
+]
+
+[project.optional-dependencies]
+opencv = ["opencv-python"]
+opencv-headless = ["opencv-python-headless"]
+
+[tool.setuptools]
+packages = [
+  "client", "client.common", "client.diff", "client.fec",
+  "server", "server.diff", "server.fec",
+]
